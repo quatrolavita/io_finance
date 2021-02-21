@@ -1,0 +1,29 @@
+.main-section {
+	height: calc(100% - 128px);
+	background-color: $main-bg-color;
+
+	&__container {
+		@include container;
+		flex-direction: column;
+		padding: 27px 0;
+		}
+
+	&__statistic-card-wrap {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 21px;
+		}
+
+	&__interruption {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 22px;
+		}
+
+	&__card-wrap {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 19px;
+		}
+	}

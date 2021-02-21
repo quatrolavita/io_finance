@@ -1,0 +1,30 @@
+mixin card--small(balance, label, src)
+    div.card.card--small
+        div.card__inner-wrap
+            p.card__label=balance
+            p.card__sub-label=label
+        img(src=src).card__graph
+
+mixin card(src, flabel, fsublabel, slabel, ssublabel, tlabel, tsublabel, fourlabel, foursublabel, fiflabel, fifsublabel)
+    div.card
+        div.card__wrap
+            img(src=src).card__img
+            div.card__inner-wrap
+                p.card__label=flabel
+                p.card__sub-label=fsublabel
+        div.card__wrap
+            div.card__inner-wrap
+                p.card__label=slabel
+                p.card__sub-label=ssublabel
+        div.card__wrap
+            div.card__inner-wrap
+                p.card__label=tlabel
+                p.card__sub-label=tsublabel
+        div.card__wrap
+            div.card__inner-wrap
+                p.card__label=fourlabel
+                p.card__sub-label=foursublabel
+        div.card__wrap
+            div.card__inner-wrap
+                p.card__label=fiflabel
+                p.card__sub-label=fifsublabel

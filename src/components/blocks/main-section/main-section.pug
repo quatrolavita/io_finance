@@ -1,0 +1,25 @@
+include ../../cards/card-mixin
+include ../../label/label-mixin
+
+.main-section
+  .main-section__container
+    .main-section__statistic-card-wrap
+      +card--small('$124.800', 'Card balance', '../../assets/images/graph1.svg')
+      +card--small('$56.400', 'Deposit (3% Rate)', '../../assets/images/graph2.svg')
+      +card--small('$24.800', 'Pending credit', '../../assets/images/graph3.svg')
+    .main-section__interruption
+      +label--main-section('Your cards')
+      +label--weighty('New product')
+    .main-section__card-wrap
+      +card('../../assets/images/Visa.svg', '3210 **** **** 4008', 'Card number', '$88.200', 'Balance', '$1.840', 'Blocked amount', '06/22', 'Valid', 'Active', 'Status')
+      +card('../../assets/images/Master Card.svg', '3210 **** **** 4008', 'Card number', '$88.200', 'Balance', '$1.840', 'Blocked amount', '06/22', 'Valid', 'Active', 'Status')
+      +card('../../assets/images/Visa.svg', '3210 **** **** 4008', 'Card number', '$88.200', 'Balance', '$1.840', 'Blocked amount', '06/22', 'Valid', 'Active', 'Status')
+    .main-section__interruption
+      +label--main-section('Open Deposit')
+    .main-section__card-wrap
+      +card('../../assets/images/deposit-img.svg', 'Cumulative deposit', 'Name', '$88.200', 'Balance', '$1.840', 'Accrued', '3%', 'Rate', 'May 2018', 'End date')
+    .main-section__interruption
+      +label--main-section('Your Credits')
+    .main-section__card-wrap
+      +card('../../assets/images/deposit-img.svg', 'Cumulative deposit', 'Name', '$88.200', 'Balance', '$1.840', 'Accrued', '3%', 'Rate', 'May 2018', 'End date')
+      +card('../../assets/images/deposit-img.svg', 'Cumulative deposit', 'Name', '$88.200', 'Balance', '$1.840', 'Accrued', '3%', 'Rate', 'May 2018', 'End date')

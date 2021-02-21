@@ -1,0 +1,33 @@
+.nav {
+	width: 100%;
+	margin-bottom: 20px;
+	&__list {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		}
+
+	&__item {
+		position: relative;
+		width: 100%;
+		&:hover {
+			background-color: $hover-bg;
+			&:before {
+				position: absolute;
+				display: block;
+				width: 3px;
+				height: 64px;
+				content: "";
+				background-color: $tittle-color;
+				}
+			}
+		}
+
+	&__link {
+		display: block;
+		padding: 24px 68px 24px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 16px;
+		}
+	}

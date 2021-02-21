@@ -1,0 +1,30 @@
+.sidebar {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 242px;
+	padding-top: 21px;
+	border-right: 1px solid $border-color;
+
+	&__logo-item {
+		@include font-family($rubik, 20px, 300, $tittle-color);
+		letter-spacing: 0.74px;
+		line-height: 32px;
+		}
+
+	&__logo {
+		@include font-family($rubik, 20px, 550, $tittle-color);
+		margin-bottom: 19px;
+		letter-spacing: 0.2px;
+		text-transform: uppercase;
+		line-height: 23px;
+		}
+
+	&__interruption {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		margin-bottom: 16px;
+		padding: 0 21px 0 28px;
+		}
+	}
