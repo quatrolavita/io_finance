@@ -1,0 +1,18 @@
+.label {
+	color: $sub-label-color;
+
+	&--main-section {
+		letter-spacing: 0.2px;
+		color: $sub-label-dark-color;
+		font-size: 16px;
+		line-height: 19px;
+		}
+
+	&--weighty {
+		text-transform: uppercase;
+		color: $font-main-color;
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 14px;
+		}
+	}

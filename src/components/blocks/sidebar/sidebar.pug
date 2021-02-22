@@ -1,0 +1,25 @@
+include ../../label/label-mixin
+include ../../bills/bills-mixin
+include ../../nav/nav-mixin
+
+.sidebar
+  p.sidebar__logo
+    span.sidebar__logo-item io
+    | Finance
+  nav.nav
+    ul.nav__list
+      +nav__item('Dashboard', 'Dashboard')
+      +nav__item('Transactions', 'Transactions')
+      +nav__item('Accounts', 'Accounts')
+      +nav__item('Payments', 'Payments')
+      +nav__item('Reports', 'Reports')
+      +nav__item('Settings', 'Settings')
+      +nav__item('UI Kit', 'UI Kit')
+  .sidebar__interruption
+    +label('Products')
+    +label('Add')
+  .bills
+    +bills__item('Card xxxx-8004')
+    +bills__item('Card xxxx-1902')
+    +bills__item('Card xxxx-1804')
+    +bills__item('Bitcoin wallet')

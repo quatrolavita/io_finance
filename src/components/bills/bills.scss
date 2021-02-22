@@ -1,0 +1,25 @@
+.bills {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+	&__item {
+		position: relative;
+		cursor: pointer;
+		&:hover {
+			&:before {
+				position: absolute;
+				left: 0;
+				width: 3px;
+				height: 54px;
+				content: "";
+				background-color: $bills-line-color;
+				}
+			}
+		}
+
+	&__description {
+		padding: 20px 0;
+		text-align: center;
+		}
+	}
